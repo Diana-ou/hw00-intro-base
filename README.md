@@ -1,10 +1,8 @@
 # HW 0: Intro to Javascript and WebGL
 
-<p align="center">
-  <img width="360" height="360" src="https://github.com/Diana-ou/hw00-intro-base/blob/master/Video%20Demo.mp4">
-</p>
+![] ()
 
-[Live Demo Link] (https://diana-ou.github.io/hw00-intro-base/)
+[Live Demo Link] (https://github.com/Diana-ou/hw00-intro-base/blob/master/Demo.gif)
 
 ## Objective
 - Start learning Typescript and WebGL2
