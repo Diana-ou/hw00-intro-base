@@ -3,7 +3,6 @@
 <p align="center">
   <img width="360" height="360" src="https://user-images.githubusercontent.com/1758825/132532354-e3a45402-e484-499e-bfa7-2d73b9f2c946.png">
 </p>
-<p align="center">(source: Ken Perlin)</p>
 
 [Live Demo Link] (https://diana-ou.github.io/hw00-intro-base/)
 
@@ -26,3 +25,5 @@ On the site, you will have customization with the following controls:
 * Random sine-based noise for the "shaking" of the vertices 
 * Used worley noise as the backing lava cell shaping & protrusions
 * "Bucketed" sampling locations for pixellated effect
+
+![Video] (https://github.com/diana-ou/hw00-intro-base/blob/master/Video_Demo.mp4)
