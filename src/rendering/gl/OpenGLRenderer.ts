@@ -18,20 +18,27 @@ class OpenGLRenderer {
     this.canvas.height = height;
   }
 
+
   clear() {
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   }
 
-  render(camera: Camera, prog: ShaderProgram, drawables: Array<Drawable>) {
+  render(camera: Camera, prog: ShaderProgram, drawables: Array<Drawable>, time: number, color1: vec4, color2: vec4, pixellation: number, shapeType: number) {
     let model = mat4.create();
     let viewProj = mat4.create();
-    let color = vec4.fromValues(1, 0, 0, 1);
+
+    // //Color modifier
+    // let color = vec4.fromValues(1, 1, 0, 1);
 
     mat4.identity(model);
     mat4.multiply(viewProj, camera.projectionMatrix, camera.viewMatrix);
     prog.setModelMatrix(model);
     prog.setViewProjMatrix(viewProj);
-    prog.setGeometryColor(color);
+    prog.setGeometryColor(color1);
+    prog.setSecondaryGeometryColor(color2);
+    prog.setTime(time);
+    prog.setPixellation(pixellation);
+    prog.setShapeType(shapeType);
 
     for (let drawable of drawables) {
       prog.draw(drawable);
