@@ -25,5 +25,5 @@ On the site, you will have customization with the following controls:
 * "Bucketed" sampling locations for pixellated effect
 
 ## More Images
-![Image] (https://github.com/Diana-ou/hw00-intro-base/blob/master/Cube.png)
+![Image](https://github.com/Diana-ou/hw00-intro-base/blob/master/Cube.png)
 ![Image](https://github.com/Diana-ou/hw00-intro-base/blob/master/Sphere.png)
